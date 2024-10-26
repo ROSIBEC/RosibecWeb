@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer utilities{
+  .sections{
+    @apply px-5 md:px-10 xl:px-[120px] min-h-[400px] my-10 md:my-20
+  }
+
+  .heading2{
+    @apply text-[30px]
+  }
+
+  .heading3{
+    @apply text-center  text-[36px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200
+  }
+
+  .heading4{
+    @apply  text-[24px] md:text-[32px] font-medium leading-[40px] md:leading-[60px] text-blacks-200
+  }
+
+  .button{
+    @apply py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8
+  }
+
+  .input{
+    @apply border-2 p-2 rounded-lg outline-none w-full bg-white
+  }
+}
