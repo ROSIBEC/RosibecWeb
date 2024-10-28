@@ -2,10 +2,10 @@
 
 export const NavLink =[
     {name:'Home', link:'/'},
-    {name:'About us', link:'/program'},
+    {name:'About us', link:'/'},
     {name:'Programme Initiatives', link:'/program'},
-    {name:'Gallery', link:'/program'},
-    {name:'Volunteer', link:'/program'},
+    {name:'Gallery', link:'/'},
+    {name:'Volunteer', link:'/'},
     {name:'Contact us', link:'/contact'}
 ]
 
