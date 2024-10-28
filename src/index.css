@@ -9,9 +9,18 @@
   scroll-behavior: smooth;
 }
 
+
 @layer utilities{
   .sections{
-    @apply px-5 md:px-10 xl:px-[120px] min-h-[400px] my-10 md:my-20
+    @apply px-5 md:px-10 xl:px-[120px] min-h-[400px] mt-2 md:my-5
+  }
+
+  .px{
+    @apply px-5 md:px-10 xl:px-[120px]
+  }
+
+  .bgHeaderText{
+    @apply text-[32px] lg:text-[64px] leading-[36px] md:leading-[96px] font-semibold text-whites-100
   }
 
   .heading2{

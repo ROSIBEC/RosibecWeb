@@ -1,6 +1,7 @@
 import React from 'react'
 import { FooterLink } from '../constant/data'
 import  logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
                 FooterLink.map(footerlink=>{
                     return(
                         <div>
-                            <p className='text-blacks-100/70 font-semibold'>{footerlink.name}</p>
+                            <Link to={footerlink.link} className='text-blacks-100/70 font-semibold cursor-pointer'><p >{footerlink.name}</p></Link>
                         </div>
                     )
                 })
@@ -18,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div className='flex  justify-between items-center mt-8'>
-            <img src={logo} alt=""  className='max-sm:w-[70px]'/>
+            <Link to='/'><img src={logo} alt=""  className='max-sm:w-[70px]'/></Link>
             <p className='text-blacks-50'>&copy; 2024 Rosemary. All rights reserved</p>
         </div>
     </footer>

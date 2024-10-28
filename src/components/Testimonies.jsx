@@ -1,9 +1,10 @@
 import React from 'react'
 import { Testimony } from '../constant/data'
+import { Link } from 'react-router-dom'
 
 const Testimonies = () => {
   return (
-    <section className='sections'>
+    <section className='sections mb-5'>
         <h3 className='heading3 pb-12'>Testimonies</h3>
         <div className='grid md:grid-cols-2 gap-8'>
             {
@@ -20,12 +21,13 @@ const Testimonies = () => {
             }
         </div>
 
-        <div className='w-full flex gap-8 mt-20'>
-            <button type="button" className='button w-full'>Volunteer</button>
-            <button type="button" className='button w-full'>Donate</button>
+        <div className='w-full flex max-sm:flex-col gap-8 mt-20'>
+            <Link to='/' className='w-full'><button type="button" className='button w-full'>Volunteer</button></Link>
+            <Link to='/donate' className='w-full'><button type="button" className='button w-full'>Donate</button></Link>
         </div>
     </section>
   )
 }
 
 export default Testimonies
+

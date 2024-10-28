@@ -4,13 +4,13 @@ import Header from '../components/Header'
 import Impacted from '../components/Impacted'
 import Project from '../components/Project'
 import Testimonies from '../components/Testimonies'
-import Contact from '../components/Contact'
+import Contact from '../components/Contacting'
 import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <section className=''>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Header/>
         <Impacted/>
         <Project/>

@@ -24,6 +24,12 @@ export default {
           100:'#E3AE3B',
           200:'#DA9F1F'
         }
+      },
+      backgroundImage:{
+        programHeader:"url('./src/assets/programHeader.png')",
+        programJoin: "url('./src/assets/programJoin.png')",
+        contactHeader: "url('./src/assets/contactHeader.png')",
+        donateHeader: "url('./src/assets/donateHeader.png')"
       }
     },
   },

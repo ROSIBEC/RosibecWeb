@@ -2,18 +2,18 @@
 
 export const NavLink =[
     {name:'Home', link:'/'},
-    {name:'About us', link:'/'},
-    {name:'Gallery', link:'/'},
-    {name:'Volunteer', link:'/'},
-    {name:'Programme Initiatives', link:'/'},
-    {name:'Contact us', link:'/'}
+    {name:'About us', link:'/program'},
+    {name:'Programme Initiatives', link:'/program'},
+    {name:'Gallery', link:'/program'},
+    {name:'Volunteer', link:'/program'},
+    {name:'Contact us', link:'/contact'}
 ]
 
 export const FooterLink =[
     {name:'Volunteer', link:'/'},
-    {name:'Donate', link:'/'},
+    {name:'Donate', link:'/donate'},
     {name:'Partner', link:'/'},
-    {name:'Contact', link:'/'},
+    {name:'Contact', link:'/contact'},
     {name:'Socials', link:'/'},
     {name:'Licenses', link:'/'}
 ]
@@ -74,4 +74,25 @@ export const Testimony =[
         // img:{image1}
         img:'../src/assets/image2.svg'
     }
+]
+
+export const Blog =[
+    {
+        title:'Building a',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
+        href:'#',
+        img:'../src/assets/programBlog.svg'
+    },
+    {
+        title:'Building a',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
+        href:'#',
+        img:'../src/assets/programBlog.svg'
+    },
+    {
+        title:'Building a',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
+        href:'#',
+        img: '../src/assets/programBlog.svg'
+    },
 ]
