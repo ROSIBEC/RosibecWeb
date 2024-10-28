@@ -9,7 +9,31 @@ const Donate = () => {
         <div className='md:my-10 max-sm:mb-5 rounded-[16px]  bg-donateHeader h-[200px] md:h-[500px] flex items-center justify-center bg-cover bg-no-repeat'>
             <h2 className='bgHeaderText'>Donate</h2>
         </div>
-        <Contact/>
+        <form action="" className='grid gap-y-3 md:w-[70%] mx-auto my-10 pt-5 '>
+            <h2 className='heading4 text-center'>Your generosity can make a real difference. <br /> Be part of something bigger today!</h2>
+            <div className='grid gap-2'>
+                <label htmlFor="">Enter Amount</label>
+                <input type="text" placeholder='****' className='input'/>
+            </div>
+            <div className='flex max-sm:flex-col gap-3 md:gap-8 w-full justify-between'>
+                <div className='grid gap-2 w-full'>
+                    <label htmlFor="">First name</label>
+                    <input type="text" placeholder='First name' className='input'/>
+                </div>
+                <div className='grid gap-2 w-full'>
+                    <label htmlFor="">Last name</label>
+                    <input type="text" placeholder='Last name' className='input' />
+                </div>
+            </div>
+
+            <div className='grid gap-2'>
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder='you@company.com' className='input'/>
+            </div>
+            
+            
+            <button type="submit" className='button'>Pay</button>
+        </form>
         <Footer/>
     </section>
   )
