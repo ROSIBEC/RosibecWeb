@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Testimonies = () => {
   return (
     <section className='sections mb-5'>
-        <h3 className='heading3 pb-12'>Testimonies</h3>
+        <h3 className='heading3 mt-10 pb-5 md:pb-12'>Testimonies</h3>
         <div className='grid md:grid-cols-2 gap-8'>
             {
                 Testimony.map(testimony =>{

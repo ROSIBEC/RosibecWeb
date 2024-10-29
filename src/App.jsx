@@ -5,7 +5,6 @@ import Home from './page/Home'
 import Program from './page/Programmes'
 import Contact from './page/Contact'
 import NoPage from "./page/NoPage";
-import Navbars from "./page/Navbar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Donate from "./page/Donate";

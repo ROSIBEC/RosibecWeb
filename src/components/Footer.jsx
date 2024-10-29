@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className='border-t-2 max-sm:mt-10  px-5 md:px-10 xl:px-[120px] pt-12  border-blacks-50'>
-        <div className='flex max-sm:flex-col border-b pb-4  border-blacks-50 justify-between'>
+    <footer className='border-t-2 max-sm:mt-10  px-3 md:px-10 xl:px-[120px] pt-12  border-blacks-50'>
+        <div className='flex max-sm:flex-col gap-y-3 border-b pb-4  border-blacks-50 justify-between'>
             {
                 FooterLink.map(footerlink=>{
                     return(

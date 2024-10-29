@@ -40,7 +40,7 @@ const Layout = () => {
                       })
                   }
 
-                  <Link to='/donate' className='bg-white text-purples-200 py-3 px-5 grid items-center rounded-[16px]'><button type="button">Donate</button></Link>
+                  <Link to='/donate' className='bg-white text-purples-200 py-2 px-4 grid items-center rounded-[16px]'><button type="button">Donate</button></Link>
 
               </div>
               {/* <Link to='/donate'><button type="button" className='button hidden md:flex'>Donate</button></Link> */}
