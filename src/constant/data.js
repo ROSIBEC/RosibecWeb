@@ -64,7 +64,7 @@ export const Testimony =[
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
         // img:{image1}
-        img:'/src/assets/image1.svg'
+        img:'/assets/image1.svg'
     },
 
     {
@@ -72,7 +72,7 @@ export const Testimony =[
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
         // img:{image1}
-        img:'/src/assets/image2.svg'
+        img:'/assets/image2.svg'
     }
 ]
 
@@ -81,18 +81,18 @@ export const Blog =[
         title:'Building a',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img:'/src/assets/programBlog.svg'
+        img:'/assets/programBlog.svg'
     },
     {
         title:'Building a',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img:'/src/assets/programBlog.svg'
+        img:'/assets/programBlog.svg'
     },
     {
         title:'Building a',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img: '/src/assets/programBlog.svg'
+        img: '/assets/programBlog.svg'
     },
 ]
