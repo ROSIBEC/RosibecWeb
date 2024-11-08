@@ -1,4 +1,5 @@
-
+import image1 from '../assets/image1.svg'
+import image2 from '../assets/image2.svg'
 
 export const NavLink =[
     {name:'Home', link:'/'},
@@ -45,7 +46,7 @@ export const Projects =[
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
         // img:{image1}
-        img:'/src/assets/image1.svg'
+        img:image1
         // img:{image1}
     },
 
@@ -53,7 +54,7 @@ export const Projects =[
         title: 'Building a lorem ipsum',
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
-        img:'/src/assets/image2.svg'
+        img:image2
         // img:{image1}
     }
 ]
@@ -64,7 +65,7 @@ export const Testimony =[
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
         // img:{image1}
-        img:'/assets/image1.svg'
+        img: image1
     },
 
     {
@@ -72,7 +73,7 @@ export const Testimony =[
         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis unde laboriosam natus aliquid inventore! Hic sint voluptates repudiandae. Maiores totam animi nam fuga expedita, consequuntur voluptas labore quisquam adipisci. Aperiam, ullam consectetur.',
         href: '/',
         // img:{image1}
-        img:'/assets/image2.svg'
+        img:image2
     }
 ]
 
