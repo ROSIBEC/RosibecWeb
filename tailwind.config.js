@@ -26,10 +26,10 @@ export default {
         }
       },
       backgroundImage:{
-        programHeader:"url('./src/assets/programHeader.png')",
-        programJoin: "url('./src/assets/programJoin.png')",
-        contactHeader: "url('./src/assets/contactHeader.png')",
-        donateHeader: "url('./src/assets/donateHeader.png')"
+        'programHeader':"url('./src/assets/programHeader.png')",
+        'programJoin': "url('/src/assets/programJoin.png')",
+        'contactHeader': "url('../src/assets/contactHeader.png')",
+        'donateHeader': "url('/src/assets/donateHeader.png')"
       }
     },
   },
