@@ -28,7 +28,7 @@
   }
 
   .heading3{
-    @apply text-center  text-[36px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200
+    @apply text-center  text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200
   }
 
   .heading4{
@@ -41,5 +41,9 @@
 
   .input{
     @apply border-2 p-2 rounded-lg outline-none w-full bg-white
+  }
+
+  .stepsCard{
+    @apply grid gap-5
   }
 }

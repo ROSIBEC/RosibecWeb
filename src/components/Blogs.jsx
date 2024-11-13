@@ -8,7 +8,7 @@ const Blogs = () => {
             {
                 Blog.map(blog=>{
                     return(
-                        <div className='grid gap-5'>
+                        <div className='grid gap-5' key={blog.title}>
                             <img src={blog.img} alt="" />
                             <h4 className='heading4'>{blog.title}</h4>
                             <p>{blog.desc}</p>

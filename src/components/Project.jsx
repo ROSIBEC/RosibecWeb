@@ -9,7 +9,7 @@ const Project = () => {
             {
                 Projects.map(project =>{
                     return(
-                        <div>
+                        <div key={project.title}>
                             <img src={project.img} alt={project.title} />
                             <h4 className='pt-4 heading4'>{project.title}</h4>
                             <p className='my-3'>{project.text}</p>

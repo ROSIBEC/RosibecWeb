@@ -1,12 +1,14 @@
 import image1 from '../assets/image1.svg'
 import image2 from '../assets/image2.svg'
+import programBlog from '../assets/programBlog.svg'
+
 
 export const NavLink =[
     {name:'Home', link:'/'},
-    {name:'About us', link:'/'},
+    {name:'About us', link:'/about'},
     {name:'Programme Initiatives', link:'/program'},
     {name:'Gallery', link:'/'},
-    {name:'Volunteer', link:'/'},
+    {name:'Volunteer', link:'/volunteer'},
     {name:'Contact us', link:'/contact'}
 ]
 
@@ -82,18 +84,18 @@ export const Blog =[
         title:'Building a',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img:'/assets/programBlog.svg'
+        img:programBlog
     },
     {
-        title:'Building a',
+        title:'Building ',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img:'/assets/programBlog.svg'
+        img:programBlog
     },
     {
-        title:'Building a',
+        title:'Building aa',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo, ratione expedita eum qui facilis! Blanditiis, sunt quis quo consequuntur reiciendis accusamus voluptatibus.',
         href:'#',
-        img: '/assets/programBlog.svg'
+        img: programBlog
     },
 ]

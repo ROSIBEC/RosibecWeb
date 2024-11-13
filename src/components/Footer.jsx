@@ -10,7 +10,7 @@ const Footer = () => {
             {
                 FooterLink.map(footerlink=>{
                     return(
-                        <div>
+                        <div key={footerlink.name}>
                             <Link to={footerlink.link} className='text-blacks-100/70 font-semibold cursor-pointer'><p >{footerlink.name}</p></Link>
                         </div>
                     )

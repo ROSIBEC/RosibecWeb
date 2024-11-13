@@ -8,6 +8,8 @@ import NoPage from "./page/NoPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Donate from "./page/Donate";
+import Volunteer from "./page/Volunteer";
+import About from "./page/About";
 
 export default function App() {
   return (
@@ -15,7 +17,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About/>} />
           <Route path="program" element={<Program />} />
+          <Route path="volunteer" element={<Volunteer/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="donate" element={<Donate/>} />
           <Route path="*" element={<NoPage />} />
