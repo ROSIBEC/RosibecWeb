@@ -11,7 +11,7 @@ const Project = () => {
                 Projects.map(project =>{
                     return(
                         <div key={project.title}> 
-                            <img src={project.img} alt={project.title} />
+                            <img src={project.img} alt={project.title}  className='rouned-[20px]'/>
                             <h4 className='pt-4 heading4'>{project.title}</h4>
                             <p className='my-3'>{project.text}</p>
                             <Link to={project.href}><button type="button" className='button'>Donate</button></Link>

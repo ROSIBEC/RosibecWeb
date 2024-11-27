@@ -19,7 +19,7 @@ const Programmes = () => {
                     <p className='text-whites-200'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
                         with the resources and tools needed to foster self sufficiency.
                     </p>
-                    <a href="/donate" className='button'><button type="button">Donate</button></a>
+                    <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8'><button type="button">Donate</button></a>
                 </div>
             </div>
             <div className='bg-whites-200 mt-5 md:mt-10 py-5 md:py-20'>
@@ -46,7 +46,7 @@ const Programmes = () => {
                     </div>
                 </div>
             </div>
-            <div className='px mb-10 min-h-[400px] md:py-10 max-h-screen flex max-sm:flex-col gap-10 mt-5 md:mt-10'>
+            <div className='px mb-10 min-h-screen md:min-h-[400px] md:py-10  flex max-sm:flex-col gap-10 mt-5 md:mt-10'>
                 {/* <img src={renovate} alt="" className='rounded-[20px] '  className=' hidden md:flex'/> */}
                 <div className=''>
                     <h3 className='heading4 text-center'>Projects done</h3>
@@ -83,16 +83,16 @@ const Programmes = () => {
             
             
 
-            <div className='px py-20 md:mt-10 min-h-[470px]'>
+            <div className='px py-10 md:py-20 md:mt-10 md:min-h-[470px]'>
                 <div className='bg-programJoin rounded-[16px] bg-cover bg-no-repeat h-[300px] md:h-[500px] flex flex-col items-center justify-center  px-5 md:px-20'>
                     <h3 className='bgHeaderText'>Join the cause</h3>
-                    <p className='text-whites-200 w-10/12 text-[32px]'>Make a difference today! Your time and skills can bring hope and transform communities. 
+                    <p className='text-whites-200 w-10/12 md:text-[32px]'>Make a difference today! Your time and skills can bring hope and transform communities. 
                         Join us in empowering others and creating lasting change!
                     </p>
-                    <div className=' gap-5 mt-10 md:gap-10 mx-auto  flex max-sm:flex-col  '>
-                        <Link to='/volunteer'><button type="button" className='button md:w-4/12'>Volunteer</button></Link>
-                        <button type="button" className='button md:w-4/12'>Partner</button>
-                        <Link to='/donate' className='w-full'><button type="button" className='button w-full'>Donate</button></Link>
+                    <div className=' gap-2 mt-10 md:gap-10 mx-auto  flex max-sm:  '>
+                        <Link to='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></Link>
+                        <button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3 '>Partner</button>
+                        <Link to='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></Link>
                     </div>
                 </div>
                 

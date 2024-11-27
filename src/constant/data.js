@@ -17,10 +17,10 @@ export const NavLink =[
 export const FooterLink =[
     {name:'Volunteer', link:'/'},
     {name:'Donate', link:'/donate'},
-    {name:'Partner', link:'/'},
+    {name:'Partner', link:'#'},
     {name:'Contact', link:'/contact'},
-    {name:'Socials', link:'/'},
-    {name:'Licenses', link:'/'}
+    {name:'Socials', link:'/contact'},
+    {name:'Licenses', link:'#'}
 ]
 
 export const Impact =[

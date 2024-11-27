@@ -11,7 +11,7 @@ const Testimonies = () => {
                 Testimony.map(testimony =>{
                     return(
                         <div key={testimony.title}>
-                            <img src={testimony.img} alt="" />
+                            <img src={testimony.img} alt={testimony.title}  className='rounded-[20px]'/>
                             <h4 className='heading4 pt-4'>{testimony.title}</h4>
                             <p className='my-3'>{testimony.text}</p>
                             <Link to={testimony.href}><button type="button" className='button'>{testimony.doc}</button></Link>

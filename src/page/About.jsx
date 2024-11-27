@@ -13,15 +13,15 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <section>
-        <div className='sections'>
-          <div className='md:my-10 max-sm:mb-5  pt-10 rounded-[16px]  bg-contactHeader h-[250px] md:h-[470px] text-center bg-cover bg-no-repeat'>
-            <div className='w-1/2 text-whites-200 mx-auto grid gap-10 '>
+    <section className='sections'>
+        <div className=''>
+          <div className='md:my-10 max-sm:mb-5 pt-5  md:pt-10 rounded-[16px]  bg-contactHeader h-[380px] md:h-[470px] text-center bg-cover bg-center bg-no-repeat'>
+            <div className='md:w-1/2 text-whites-200 mx-auto grid gap-5 md:gap-10 '>
               <h2 className='heading2'>About Us</h2>
               <p>
                 The Rosemary Care Foundation empowers widows and underprivileged children through sustainable programs, economic opportunities, and community development. We provide education, healthcare, and entrepreneurship training to help them achieve self sufficiency. By uplifting these groups, we create lasting impacts that transform communities and future generations, offering hope and support to those in need.
               </p>
-              <div className='flex max-sm:flex-col items-center justify-center mt-5 gap-5'>
+              <div className='flex max-sm:hidden items-center justify-center mt-5 gap-5'>
                 <Link to='/volunteer'><button className='button' type='button'>Volunteer</button></Link>
                 <Link to='/volunteer'><button className='button' type='button'>Partner</button></Link>
                 <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
@@ -29,9 +29,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className='sections pt-10'>
-            <div className='flex flex-col gap-20 relative'>
-                <div className='bg-purples-200  absolute right-[160px] text-whites-200 top-[220px] rounded-full px-6 py-8'><span className='text-[20px] font-semibold'>20 Years</span> <br /> in Service</div>
+          <div className=' pt-10'>
+            <div className='flex flex-col gap-10 md:gap-20 relative'>
+                <div className='bg-purples-200 hidden md:flex  absolute right-[160px] text-whites-200 top-[220px] rounded-full px-6 py-8'><span className='text-[20px] font-semibold'>20 Years</span> <br /> in Service</div>
                 <div className='grid md:grid-cols-2 gap-5'>
                   <div>
                     <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Vision</h3>
@@ -41,7 +41,7 @@ const About = () => {
                   </div>
                   <img src={visionn} alt="" className='rounded-[20px]' />
                 </div>
-                <div className='grid grid-cols-2'>
+                <div className='flex max-sm:flex-col gap-5'>
                   <div>
                     <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Mission</h3>
                     <p>
@@ -53,7 +53,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='sections pt-10'>
+          <div className=' pt-10'>
             <div className='text-center mb-10'>
               <h3 className='heading3'>Meet The Board Of Trustees</h3>
               <p>Our Board of Trustees is a passionate group of professionals dedicated to guiding
@@ -99,7 +99,7 @@ const About = () => {
             <img src={partnership} alt="" className='' />
           </div>
 
-          <div className='p-5 flex rounded-[20px] bg-purple-400 items-center justify-center max-sm:flex-col gap-5'>
+          <div className='p-5 flex max-sm:text-center rounded-[20px] bg-purple-400 items-center justify-center max-sm:flex-col gap-5'>
             <p>Would you like to join us to put a smile on someone face today?</p>
             <button type='button' className='button'>Donate</button>
           </div>
