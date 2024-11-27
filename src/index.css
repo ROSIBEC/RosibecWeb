@@ -24,11 +24,11 @@
   }
 
   .heading2{
-    @apply text-[30px]
+    @apply text-[32px] md:text-[64px] text-whites-200 font-semibold leading-[40px] md:leading-[60px] 
   }
 
   .heading3{
-    @apply text-center  text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200
+    @apply text-center   text-[28px] md:text-[36px] font-semibold leading-[30px] md:leading-[54px] text-blacks-200
   }
 
   .heading4{
@@ -36,7 +36,7 @@
   }
 
   .button{
-    @apply py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8
+    @apply py-5 text-whites-100 rounded-[10px] bg-purples-200 px-8
   }
 
   .input{

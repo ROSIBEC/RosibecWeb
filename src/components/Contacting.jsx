@@ -8,11 +8,11 @@ const Contact = () => {
         <div className='bg-purples-100/30 px-5 py-10'>
             <div className='text-center'>
                 <p>Contact us</p>
-                <h3 className='heading3'>Get in touch</h3>
+                <h3 className='heading3 mb-4 my-2'>Get in touch</h3>
                 <p>We'd love to hear from you. Please fill out this form.</p>
             </div>
 
-            <form action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-5 '>
+            <form action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-10 '>
                 <div className='flex max-sm:flex-col gap-3 md:gap-8 w-full justify-between'>
                     <div className='grid gap-2 w-full'>
                         <label htmlFor="">First name</label>
@@ -46,26 +46,20 @@ const Contact = () => {
             
         </div>
 
-        <div className='flex px-5  max-sm:flex-col justify-between pt-10 lg:pt-32'>
-                <div className='w-[300px]'>
-                    <p className='text-blacks-50'>Address:</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non enim incidunt accusamus provident, quasi architecto molestiae. Maiores, quis quo consectetur minus nihil nisi corporis.</p>
+        <div className='flex px-5 lg:pb-20  max-sm:flex-col items-start flex-wrap justify-between pt-10 lg:pt-32'>
+                <div>
+                    <p className='text-blacks-50'>Phone number:</p>
+                    <p>+234 803 312 5382</p>
                 </div>
-                <div className='grid gap-5 my-5'>
-                    <div>
-                        <p className='text-blacks-50'>Phone number:</p>
-                        <p>+234 803 312 5382</p>
-                    </div>
-                    <div className='md:mt-6'>
-                        <p className='text-blacks-50'>email</p>
-                        <a href="rosibecfoundation@gmail.com">rosibecfoundation@gmail.com</a>
-                    </div>
+                <div className=''>
+                    <p className='text-blacks-50'>email</p>
+                    <a href="mailto:rosibecfoundation@gmail.com" className='hover:underline '>rosibecfoundation@gmail.com</a>
                 </div>
                 <div>
                     <div className='flex gap-3'>
-                        <LucideInstagram/>
-                        <Facebook/>
-                        <Twitter/>
+                        <a href="https://www.instagram.com/rosibecfoundation"><LucideInstagram/></a>
+                        <a href="https://www.facebook.com/RosibecFoundation"><Facebook/></a>
+                        <a href="https://x.com/RosibecF"><Twitter/></a>
                         
                     </div>
                     <button type="button" className='button flex gap-3 mt-8'>Open hours <ChevronDown/></button>

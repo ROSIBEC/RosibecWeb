@@ -1,44 +1,55 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import ceo1 from '../assets/ceo1.svg'
-import ceo2 from '../assets/ceo2.svg'
-import ceo3 from '../assets/ceo3.svg'
-import ceo4 from '../assets/ceo4.svg'
-import ceo5 from '../assets/ceo5.svg'
+import ceo1 from '../assets/board1.svg'
+import ceo2 from '../assets/board2.svg'
+import ceo3 from '../assets/board3.svg'
+import ceo4 from '../assets/board4.svg'
+import ceo5 from '../assets/board5.svg'
+import partnership from '../assets/prayerCover.svg'
+import visionn from '../assets/visionn.svg'
+import missionn from '../assets/missionn.svg'
+import { Link } from 'react-router-dom'
 // import ceo6 from '../assets/coe6.svg'
 
 const About = () => {
   return (
     <section>
-        <div className=''>
-          <div className='sections'>
-            <h2 className='heading2'>About Us</h2>
-            <p>
-              The Rosemary Care Foundation empowers widows and underprivileged children through sustainable programs, economic opportunities, and community development. We provide education, healthcare, and entrepreneurship training to help them achieve self sufficiency. By uplifting these groups, we create lasting impacts that transform communities and future generations, offering hope and support to those in need.
-            </p>
-            <div className='flex max-sm:flex-col mt-5 gap-5'>
-              <button className='button' type='button'>Volunteer</button>
-              <button className='button' type='button'>Partner</button>
-              <button className='button' type='button'>Donate</button>
+        <div className='sections'>
+          <div className='md:my-10 max-sm:mb-5  pt-10 rounded-[16px]  bg-contactHeader h-[250px] md:h-[470px] text-center bg-cover bg-no-repeat'>
+            <div className='w-1/2 text-whites-200 mx-auto grid gap-10 '>
+              <h2 className='heading2'>About Us</h2>
+              <p>
+                The Rosemary Care Foundation empowers widows and underprivileged children through sustainable programs, economic opportunities, and community development. We provide education, healthcare, and entrepreneurship training to help them achieve self sufficiency. By uplifting these groups, we create lasting impacts that transform communities and future generations, offering hope and support to those in need.
+              </p>
+              <div className='flex max-sm:flex-col items-center justify-center mt-5 gap-5'>
+                <Link to='/volunteer'><button className='button' type='button'>Volunteer</button></Link>
+                <Link to='/volunteer'><button className='button' type='button'>Partner</button></Link>
+                <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
+              </div>
             </div>
           </div>
 
           <div className='sections pt-10'>
-            <div className='flex'>
-              <div className='grid gap-5'>
-                <div>
-                  <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Vision</h3>
-                  <p>
-                    A world where every widow and underprivileged child is equipped with the tools to build a sustainable future, breaking the cycle of poverty and transforming their lives and communities for the better
-                  </p>
+            <div className='flex flex-col gap-20 relative'>
+                <div className='bg-purples-200  absolute right-[160px] text-whites-200 top-[220px] rounded-full px-6 py-8'><span className='text-[20px] font-semibold'>20 Years</span> <br /> in Service</div>
+                <div className='grid md:grid-cols-2 gap-5'>
+                  <div>
+                    <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Vision</h3>
+                    <p>
+                      A world where every widow and underprivileged child is equipped with the tools to build a sustainable future, breaking the cycle of poverty and transforming their lives and communities for the better.
+                    </p>
+                  </div>
+                  <img src={visionn} alt="" className='rounded-[20px]' />
                 </div>
-                <div>
-                  <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Mission</h3>
-                  <p>
-                    To empower widows and underprivileged children by providing sustainable resources, education, and entrepreneurship opportunities. We are committed to creating a supportive environment where individuals can thrive, fostering resilience and long term success.                  </p>
+                <div className='grid grid-cols-2'>
+                  <div>
+                    <h3 className='text-[32px] md:text-[40px] font-semibold leading-[40px] md:leading-[60px] text-blacks-200'>Our Mission</h3>
+                    <p>
+                      To empower widows and underprivileged children by providing sustainable resources, education, and entrepreneurship opportunities. We are committed to creating a supportive environment where individuals can thrive, fostering resilience and long term success. </p>
+                  </div>
+                  <img src={missionn} alt="" className='rounded-[20px]' />
                 </div>
-              </div>
-              <img src="" alt="" />
+              
             </div>
           </div>
 
@@ -51,39 +62,44 @@ const About = () => {
             </div>
             <div className='grid gap-y-10 gap-5  md:grid-cols-3'>
               <div className='text-center grid gap-3'>
-                <img src={ceo1} alt="" />
-                <h4>Jemimah Titus</h4>
-                <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
+                <img src={ceo1} alt="" className='rounded-[20px]' />
+                <h4>Rev Mrs Rosemary Ibeji</h4>
+                <p className='text-neutral-500 text-[14px]'>Chairman</p>
               </div>
               <div className='text-center grid gap-3'>
-                <img src={ceo2} alt="" />
-                <h4>Dikson Jude</h4>
-                <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
+                <img src={ceo2} alt="" className='rounded-[20px]' />
+                <h4>Mr. Peter Ibeji</h4>
+                <p className='text-neutral-500 text-[14px]'>Trustees</p>
               </div>
               <div className='text-center grid gap-3'>
-                <img src={ceo3} alt="" />
-                <h4>Shade Fomolake </h4>
-                <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
+                <img src={ceo3} alt="" className='rounded-[20px]' />
+                <h4>Mrs. Peace Ezeka</h4>
+                <p className='text-neutral-500 text-[14px]'>Trustees</p>
               </div>
               <div className='text-center grid gap-3'>
-                <img src={ceo4} alt="" />
-                <h4>Sarah Jakes</h4>
-                <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
+                <img src={ceo4} alt="" className='rounded-[20px]' />
+                <h4>Chidinma Ibeji</h4>
+                <p className='text-neutral-500 text-[14px]'>Treasurer</p>
               </div>
               <div className='text-center grid gap-3'>
-                <img src={ceo5} alt="" />
-                <h4>David Oluwapelu</h4>
-                <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
+                <img src={ceo5} alt="" className='rounded-[20px]' />
+                <h4>Mary Ibeji</h4>
+                <p className='text-neutral-500 text-[14px]'>Secretary</p>
               </div>
-              <div className='text-center grid gap-3'>
-                <img src={ceo5} alt="" />
+              {/* <div className='text-center grid gap-3'>
+                <img src={ceo5} alt="" className='rounded-[20px]' />
                 <h4>Akintola Johnson</h4>
                 <p className='text-neutral-500 text-[14px]'>Cofounder, CEO</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div className='p-8 flex max-sm:flex-col gap-5'>
+          <div className='w-full py-20 grid items-center justify-center mb-5'>
+            <h3 className='heading3'>Partnership</h3>
+            <img src={partnership} alt="" className='' />
+          </div>
+
+          <div className='p-5 flex rounded-[20px] bg-purple-400 items-center justify-center max-sm:flex-col gap-5'>
             <p>Would you like to join us to put a smile on someone face today?</p>
             <button type='button' className='button'>Donate</button>
           </div>

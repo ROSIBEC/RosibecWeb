@@ -13,13 +13,13 @@ const Layout = () => {
       <nav className='py-5 px-5 md:px-10 lg:px-[120px]'>
         <ul className='flex justify-between items-center'>
           <Link to='/' className='cursor-pointer'><img src={logo} alt=""  className='w-[70px]'/></Link>
-          <div className='hidden md:flex gap-5'>
+          <div className='hidden md:flex gap-10'>
               {
                   NavLink.map(navlink =>{
                       return(
                           <div>
                               
-                              <Link to={navlink.link}><p className=' font-semibold cursor-pointer '>{navlink.name}</p></Link>
+                              <Link to={navlink.link}><p className=' font-medium cursor-pointer '>{navlink.name}</p></Link>
                           </div>
                       )
                   })

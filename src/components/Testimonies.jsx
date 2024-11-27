@@ -14,7 +14,7 @@ const Testimonies = () => {
                             <img src={testimony.img} alt="" />
                             <h4 className='heading4 pt-4'>{testimony.title}</h4>
                             <p className='my-3'>{testimony.text}</p>
-                            <button type="button" className='button'>Read more</button>
+                            <Link to={testimony.href}><button type="button" className='button'>{testimony.doc}</button></Link>
                         </div>
                     )
                 })
@@ -22,7 +22,7 @@ const Testimonies = () => {
         </div>
 
         <div className='w-full flex max-sm:flex-col gap-8 mt-20'>
-            <Link to='/' className='w-full'><button type="button" className='button w-full'>Volunteer</button></Link>
+            <Link to='/volunteer' className='w-full'><button type="button" className='button w-full'>Volunteer</button></Link>
             <Link to='/donate' className='w-full'><button type="button" className='button w-full'>Donate</button></Link>
         </div>
     </section>

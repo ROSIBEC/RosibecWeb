@@ -5,13 +5,13 @@ import Footer from '../components/Footer'
 
 const Donate = () => {
   return (
-    <section className='sections'>
-        <div className='md:my-10 max-sm:mb-5 rounded-[16px]  bg-donateHeader h-[250px] md:h-[470px] flex items-center justify-center bg-cover bg-no-repeat'>
-            <h2 className='bgHeaderText'>Donate</h2>
+    <section id='donate' className='sections'>
+        <div className='md:my-10 max-sm:mb-5 rounded-[16px]  bg-donateHeader h-[250px] md:h-[470px] flex items-center justify-center bg-cover bg-center bg-no-repeat'>
+            {/* <h2 className='bgHeaderText'>Donate</h2> */}
         </div>
         <form action="" className='grid gap-y-3 md:w-[70%] mx-auto md:my-10 md:pt-5 '>
             <h2 className='heading4 text-center'>Your generosity can make a real difference. <br /> Be part of something bigger today!</h2>
-            <div className='grid gap-2'>
+            <div className='grid gap-2 mt-5'>
                 <label htmlFor="">Enter Amount</label>
                 <input type="text" placeholder='****' className='input'/>
             </div>
@@ -35,6 +35,7 @@ const Donate = () => {
             <button type="submit" className='button'>Pay</button>
         </form>
         <Footer/>
+        <p className='grid justify-center  w-[100%] text-center md:text-[28px] font-bold'>ACCOUNT DETAILS, COMING SOON! YOU CAN CONTACT US FOR SPONSOR</p>
     </section>
   )
 }
