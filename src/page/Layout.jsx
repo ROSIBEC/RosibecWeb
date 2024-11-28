@@ -28,7 +28,7 @@ const Layout = () => {
           </div> 
           <div onClick={()=>setClick(!click)} >
             <div className={`${click ? 'w-[50vw] visible':'invisible'}`}>
-              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200/80 px-5 py-20 h-screen text-whites-200 md:flex '>
+              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200/80 px-5 z-50 py-20 h-screen text-whites-200 md:flex '>
                   {
                       NavLink.map(navlink =>{
                           return(
