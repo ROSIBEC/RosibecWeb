@@ -14,7 +14,7 @@ const Programmes = () => {
     <section className='mt-5'>
         <div>
             <div className='px  w-full h-full  object-contain'>
-                <div className='bg-programHeader  rounded-[16px] bg-cover bg-no-repeat flex flex-col items-center text-center justify-center px-13  md:px-20 min-h-[300px] md:h-[470px]'>
+                <div className='bg-programHeader backdrop-opacity-70     rounded-[16px] bg-cover bg-no-repeat flex flex-col items-center text-center justify-center px-13  md:px-20 min-h-[300px] md:h-[470px]'>
                     <h2 className='bgHeaderText'>Programmes & Initaitives </h2>
                     <p className='text-whites-200'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
                         with the resources and tools needed to foster self sufficiency.
