@@ -15,16 +15,19 @@ const About = () => {
   return (
     <section className='sections'>
         <div className=''>
-          <div className='md:my-10 max-sm:mb-5 pt-5  md:pt-10 rounded-[16px]  bg-contactHeader h-[380px] md:h-[470px] text-center bg-cover bg-center bg-no-repeat'>
-            <div className='md:w-1/2 text-whites-200 mx-auto grid gap-5 md:gap-10 '>
-              <h2 className='heading2'>About Us</h2>
-              <p>
-                The Rosemary Care Foundation empowers widows and underprivileged children through sustainable programs, economic opportunities, and community development. We provide education, healthcare, and entrepreneurship training to help them achieve self sufficiency. By uplifting these groups, we create lasting impacts that transform communities and future generations, offering hope and support to those in need.
-              </p>
-              <div className='flex max-sm:hidden items-center justify-center mt-5 gap-5'>
-                <Link to='/volunteer'><button className='button' type='button'>Volunteer</button></Link>
-                <Link to='/volunteer'><button className='button' type='button'>Partner</button></Link>
-                <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
+          <div className='relative md:my-10 max-sm:mb-5  rounded-[16px]  bg-contactHeader h-[380px] md:h-[470px] text-center bg-cover bg-center bg-no-repeat'>
+            
+            <div className='overlay'>
+              <div className='md:w-1/2 pt-5 z-50  md:pt-10 text-whites-200 mx-auto grid gap-5 md:gap-10 '>
+                <h2 className='heading2'>About Us</h2>
+                <p>
+                  The Rosemary Care Foundation empowers widows and underprivileged children through sustainable programs, economic opportunities, and community development. We provide education, healthcare, and entrepreneurship training to help them achieve self sufficiency. By uplifting these groups, we create lasting impacts that transform communities and future generations, offering hope and support to those in need.
+                </p>
+                <div className='flex max-sm:hidden items-center justify-center mt-5 gap-5'>
+                  <Link to='/volunteer'><button className='button' type='button'>Volunteer</button></Link>
+                  <Link to='/volunteer'><button className='button' type='button'>Partner</button></Link>
+                  <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
+                </div>
               </div>
             </div>
           </div>

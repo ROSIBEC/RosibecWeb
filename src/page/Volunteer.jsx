@@ -9,19 +9,21 @@ import { Link } from 'react-router-dom'
 const Volunteer = () => {
   return (
     <section className='sections'>
-        <div className='md:my-10 max-sm:mb-5 rounded-[16px] w-full pt-5  md:pt-10 bg-volunteerHeader h-[300px] md:h-[470px]  bg-cover bg-center bg-no-repeat'>
+        <div className='relative md:my-10 max-sm:mb-5 rounded-[16px] w-full pt-5  md:pt-10 bg-volunteerHeader h-[300px] md:h-[470px]  bg-cover bg-center bg-no-repeat'>
+           <div className='overlay'>
             <div className='md:w-8/12 px-5 md:pl-20 text-whites-200 grid items-start justify-start gap-5 md:gap-10'>
-                <h2 className='text-[22px] md:text-[64px] text-whites-200 font-semibold leading-[20px] md:leading-[60px] '>Let's create change together. Start today!</h2>
-                <p className='text-md md:text-2xl'>
-                    Join us in making a difference in the lives of widows and underpriviledged children. Together we
-                    can uplift communities and build a brighter future. Start today and be part of the change.
-                </p>
-                <div className='flex  w-full items-start justify-start md:mt-5 gap-2 lg:gap-5'>
-                    <Link to='/volunteer'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Volunteer</button></Link>
-                    <Link to='/partner'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Partner</button></Link>
-                    <Link to='/donate'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Donate</button></Link>
+                    <h2 className='text-[22px] md:text-[64px] text-whites-200 font-semibold leading-[20px] md:leading-[60px] '>Let's create change together. Start today!</h2>
+                    <p className='text-md md:text-2xl'>
+                        Join us in making a difference in the lives of widows and underpriviledged children. Together we
+                        can uplift communities and build a brighter future. Start today and be part of the change.
+                    </p>
+                    <div className='flex  w-full items-start justify-start md:mt-5 gap-2 lg:gap-5'>
+                        <Link to='/volunteer'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Volunteer</button></Link>
+                        <Link to='#'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Partner</button></Link>
+                        <Link to='/donate'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Donate</button></Link>
+                    </div>
                 </div>
-            </div>
+           </div>
         </div>
 
         <div className=' pt-10'>

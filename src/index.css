@@ -19,6 +19,10 @@
     @apply px-5 md:px-10 xl:px-[120px]
   }
 
+  .overlay{
+    @apply bg-black w-full h-full absolute top-0 opacity-40 rounded-[16px] flex items-center justify-center
+  }
+
   .bgHeaderText{
     @apply text-[32px] lg:text-[64px] leading-[36px] md:leading-[96px] font-semibold text-whites-100
   }

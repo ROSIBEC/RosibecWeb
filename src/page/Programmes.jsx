@@ -15,11 +15,15 @@ const Programmes = () => {
         <div>
             <div className='px  w-full h-full  object-contain'>
                 <div className='bg-programHeader backdrop-opacity-70     rounded-[16px] bg-cover bg-no-repeat flex flex-col items-center text-center justify-center px-13  md:px-20 min-h-[300px] md:h-[470px]'>
-                    <h2 className='bgHeaderText'>Programmes & Initaitives </h2>
-                    <p className='text-whites-200'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
-                        with the resources and tools needed to foster self sufficiency.
-                    </p>
-                    <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8'><button type="button">Donate</button></a>
+                    <div className='overlay'>
+                       <div className='w-9/12'>
+                        <h2 className='bgHeaderText'>Programmes & Initaitives </h2>
+                            <p className='text-whites-200'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
+                                with the resources and tools needed to foster self sufficiency.
+                            </p>
+                            <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8'><button type="button">Donate</button></a>
+                       </div>
+                    </div>
                 </div>
             </div>
             <div className='bg-whites-200 mt-5 md:mt-10 py-5 md:py-20'>

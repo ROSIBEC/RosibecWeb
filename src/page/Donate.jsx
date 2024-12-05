@@ -1,11 +1,11 @@
-import { SectionIcon } from 'lucide-react'
+// import { SectionIcon } from 'lucide-react'
 import React from 'react'
-import Contact from '../components/Contacting'
+// import Contact from '../components/Contacting'
 import Footer from '../components/Footer'
 
 const Donate = () => {
   return (
-    <section id='donate' className='sections'>
+    <section className='sections'>
         <div className='md:my-10 max-sm:mb-5 rounded-[16px]  bg-donateHeader h-[250px] md:h-[470px] flex items-center justify-center bg-cover bg-center bg-no-repeat'>
             {/* <h2 className='bgHeaderText'>Donate</h2> */}
         </div>
