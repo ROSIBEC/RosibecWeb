@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from '../constant/data'
-import { Menu } from 'lucide-react'
+import { FolderClosedIcon, Menu, SidebarClose } from 'lucide-react'
 import logo from '../assets/logo.svg'
 import { Outlet , Link } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ const Layout = () => {
   const [click, setClick] = useState(false)
 
   return (
-    < div className='max-w-[1440px] mx-auto'>
+    < div className='max-w-[1440px] z-50 mx-auto'>
       <nav className='py-5 px-5 md:px-10 lg:px-[120px]'>
         <ul className='flex justify-between items-center'>
           <Link to='/' className='cursor-pointer'><img src={logo} alt=""  className='w-[70px]'/></Link>
@@ -27,8 +27,9 @@ const Layout = () => {
 
           </div> 
           <div onClick={()=>setClick(!click)} >
-            <div className={`${click ? 'w-[50vw] visible':'invisible'}`}>
-              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200/80 px-5 z-50 py-20 h-screen text-whites-200 md:flex '>
+            
+            <div className={`${click ? 'z-50 w-[100%] visible':'invisible'}`}>
+              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200 px-5 z-50 py-20 h-screen text-whites-200 md:flex '>
                   {
                       NavLink.map(navlink =>{
                           return(
@@ -41,7 +42,7 @@ const Layout = () => {
                   }
 
                   <Link to='/donate' className='bg-white text-purples-200 py-2 px-4 grid items-center rounded-[16px]'><button type="button">Donate</button></Link>
-
+                  <SidebarClose className='absolute top-12 right-5'/>
               </div>
               {/* <Link to='/donate'><button type="button" className='button hidden md:flex'>Donate</button></Link> */}
             </div> 

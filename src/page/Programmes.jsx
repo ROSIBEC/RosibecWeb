@@ -13,17 +13,17 @@ const Programmes = () => {
   return (
     <section className='mt-5'>
         <div>
-            <div className='px  w-full h-full  object-contain'>
-                <div className='bg-programHeader backdrop-opacity-70     rounded-[16px] bg-cover bg-no-repeat flex flex-col items-center text-center justify-center px-13  md:px-20 min-h-[300px] md:h-[470px]'>
-                    <div className='overlay'>
-                       <div className='w-9/12'>
-                        <h2 className='bgHeaderText'>Programmes & Initaitives </h2>
-                            <p className='text-whites-200'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
+            <div className='md:px w-full h-full '>
+                <div className='relative bg-programHeader     rounded-[16px] bg-cover bg-no-repeat flex flex-col items-center md:text-center justify-center px-5  md:px-20 min-h-[380px] md:h-[470px]'>
+                    <div className='overlay'></div>
+                       <div className='md:w-9/12 px-2 z-10'>
+                            <h2 className='bgHeaderText'>Programmes & Initaitives </h2>
+                            <p className='text-whites-200 mb-10'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
                                 with the resources and tools needed to foster self sufficiency.
                             </p>
-                            <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8'><button type="button">Donate</button></a>
+                            <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8 '><button type="button">Donate</button></a>
                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div className='bg-whites-200 mt-5 md:mt-10 py-5 md:py-20'>
@@ -87,16 +87,20 @@ const Programmes = () => {
             
             
 
-            <div className='px py-10 md:py-20 md:mt-10 md:min-h-[470px]'>
-                <div className='bg-programJoin rounded-[16px] bg-cover bg-no-repeat h-[300px] md:h-[500px] flex flex-col items-center justify-center  px-5 md:px-20'>
-                    <h3 className='bgHeaderText'>Join the cause</h3>
-                    <p className='text-whites-200 w-10/12 md:text-[32px]'>Make a difference today! Your time and skills can bring hope and transform communities. 
-                        Join us in empowering others and creating lasting change!
-                    </p>
-                    <div className=' gap-2 mt-10 md:gap-10 mx-auto  flex max-sm:  '>
-                        <Link to='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></Link>
-                        <button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3 '>Partner</button>
-                        <Link to='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></Link>
+            <div className=' md:px py-10 md:py-20 md:mt-10 md:min-h-[470px]'>
+                
+                <div className='relative bg-programJoin rounded-[16px] bg-cover bg-no-repeat h-[300px] md:h-[500px] flex flex-col items-center justify-center  px-2 md:px-20'>
+                <div className='overlay'></div>
+                    <div className='md:w-9/12 px-2 z-50'>
+                        <h3 className='bgHeaderText'>Join the cause</h3>
+                        <p className='text-whites-200 w-10/12 md:text-[32px]'>Make a difference today! Your time and skills can bring hope and transform communities. 
+                            Join us in empowering others and creating lasting change!
+                        </p>
+                        <div className=' gap-2 mt-10 md:gap-10 mx-auto  flex max-sm:  '>
+                            <a href='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></a>
+                            <button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3 '>Partner</button>
+                            <a href='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></a>
+                        </div>
                     </div>
                 </div>
                 

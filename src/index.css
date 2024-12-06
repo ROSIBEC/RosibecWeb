@@ -20,7 +20,7 @@
   }
 
   .overlay{
-    @apply bg-black w-full h-full absolute top-0 opacity-40 rounded-[16px] flex items-center justify-center
+    @apply bg-black w-full h-full absolute top-0 opacity-60 rounded-[16px] flex items-center justify-center
   }
 
   .bgHeaderText{
