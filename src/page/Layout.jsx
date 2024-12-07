@@ -28,8 +28,8 @@ const Layout = () => {
           </div> 
           <div onClick={()=>setClick(!click)} >
             
-            <div className={`${click ? 'z-50 w-[100%] visible':'invisible'}`}>
-              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200 px-5 z-50 py-20 h-screen text-whites-200 md:flex '>
+            <div className={`${click ? 'z-50 visible ':'invisible'}`}>
+              <div className='fixed right-0 top-0 grid gap-5 bg-purples-200 w-full px-5 z-50 py-20 h-screen text-whites-200 md:flex '>
                   {
                       NavLink.map(navlink =>{
                           return(
@@ -42,13 +42,13 @@ const Layout = () => {
                   }
 
                   <Link to='/donate' className='bg-white text-purples-200 py-2 px-4 grid items-center rounded-[16px]'><button type="button">Donate</button></Link>
-                  <SidebarClose className='absolute top-12 right-5'/>
+                  <SidebarClose className='absolute top-12 right-5 cursor-pointer'/>
               </div>
               {/* <Link to='/donate'><button type="button" className='button hidden md:flex'>Donate</button></Link> */}
             </div> 
           </div>
           <Link to='/donate'><button type="button" className='button hidden md:flex'>Donate</button></Link>
-          <Menu onClick={()=>setClick(!click)} className='md:hidden'/>
+          <Menu onClick={()=>setClick(!click)} className='md:hidden cursor-pointer'/>
         </ul>
       </nav>
 
