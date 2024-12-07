@@ -6,12 +6,12 @@ import { useForm } from 'react-hook-form'
 const Contact = () => {
     const {register, handleSubmit, formState: {errors} } = useForm()
 
-    useEffect(()=>{
-        const onForm = (data)=>{
-            console.log(data)
-        }
-        return onForm
-    }, [])
+    // useEffect(()=>{
+    //     const onForm = (data)=>{
+    //         console.log(data)
+    //     }
+    //     return onForm
+    // }, [])
     
   return (
     <section className='md:sections '>
@@ -22,7 +22,7 @@ const Contact = () => {
                 <p>We'd love to hear from you. Please fill out this form.</p>
             </div>
 
-            <form onSubmit={handleSubmit()} action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-10 '>
+            <form  action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-10 '>
                 <div className='flex max-sm:flex-col gap-3 md:gap-8 w-full justify-between'>
                     <div className='grid gap-2 w-full'>
                         <label htmlFor="">First name</label>

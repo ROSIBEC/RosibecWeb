@@ -35,7 +35,7 @@ const Layout = () => {
                           return(
                               <div>
                                   
-                                  <Link to={navlink.link}><p className=' font-semibold cursor-pointer '>{navlink.name}</p></Link>
+                                  <Link to={navlink.link}><p className=' font-semibold cursor-pointer w-full'>{navlink.name}</p></Link>
                               </div>
                           )
                       })
