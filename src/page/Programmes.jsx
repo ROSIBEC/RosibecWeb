@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { Blog } from '../constant/data'
 // import {Blogs} from '../components/Blogs'
 import financial from '../assets/financial.svg'
@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 const Programmes = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+
+    },[]);
   return (
     <section className='mt-5'>
         <div>

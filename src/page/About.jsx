@@ -9,9 +9,13 @@ import partnership from '../assets/prayerCover.svg'
 import visionn from '../assets/visionn.svg'
 import missionn from '../assets/missionn.svg'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 // import ceo6 from '../assets/coe6.svg'
 
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <section className='sections'>
         <div className=''>

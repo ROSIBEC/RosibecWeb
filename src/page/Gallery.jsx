@@ -7,8 +7,12 @@ import gal5 from '../assets/gal5.png'
 import gal6 from '../assets/gal6.png'
 import gal7 from '../assets/gal7.png'
 import gal8 from '../assets/gal8.png'
+import { useEffect } from 'react'
 
 const Gallery = () => {
+  useEffect (()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <section className='sections'>
         <div className='grid gap-10 sm:grid-cols-2'>
