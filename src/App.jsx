@@ -22,13 +22,13 @@ export default function App() {
         <Route path="/" element={<Layout/>}>
           
           <Route index element={<Home />} />
-          <Route path="about" element={<About/>} />
-          <Route path="program" element={<Program />} />
-          <Route path="volunteer" element={<Volunteer/>} />
-          <Route path="gallery" element={<Gallery/>} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="donate" element={<Donate/>} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/program" element={<Program />} />
+          <Route path="/volunteer" element={<Volunteer/>} />
+          <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate/>} />
+          <Route path="/*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
