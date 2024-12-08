@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import Contacts from "../components/Contacting"
 import Footer from "../components/Footer";
 
  const Contact = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <section className="sections">
         <div className="relative md:my-10 max-sm:mb-5 rounded-[16px]  bg-contactHeader h-[200px] md:h-[470px] flex items-center justify-center bg-cover bg-center bg-no-repeat">

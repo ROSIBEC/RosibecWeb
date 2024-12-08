@@ -5,8 +5,13 @@ import volunteerDonation from '../assets/volunteerDonatee.svg'
 import homeless from '../assets/homeless.svg'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Volunteer = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
   return (
     <section className='sections'>
         <div className='relative md:my-10 max-sm:mb-5 rounded-[16px] w-full pt-5  md:pt-10 bg-volunteerHeader h-[300px] md:h-[470px]  bg-cover bg-center bg-no-repeat'>

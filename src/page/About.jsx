@@ -25,7 +25,7 @@ const About = () => {
               </p>
               <div className='flex z-10 max-sm:hidden items-center justify-center mt-5 gap-5'>
                 <Link to='/volunteer'><button className='button' type='button'>Volunteer</button></Link>
-                <Link to='/volunteer'><button className='button' type='button'>Partner</button></Link>
+                <Link to='#'><button className='button' type='button'>Partner</button></Link>
                 <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
               </div>
             </div>
@@ -104,7 +104,7 @@ const About = () => {
 
           <div className='p-5 flex max-sm:text-center rounded-[20px] bg-purple-400 items-center justify-center max-sm:flex-col gap-5'>
             <p>Would you like to join us to put a smile on someone face today?</p>
-            <a href="/donate"><button type='button' className='button'>Donate</button></a>
+            <Link to="/donate"><button type='button' className='button'>Donate</button></Link>
           </div>
 
         </div>

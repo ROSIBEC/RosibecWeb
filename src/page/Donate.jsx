@@ -1,9 +1,13 @@
 // import { SectionIcon } from 'lucide-react'
-import React from 'react'
+import { useEffect } from 'react'
+// import React, {useEffect} from 'react'
 // import Contact from '../components/Contacting'
 import Footer from '../components/Footer'
 
 const Donate = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
   return (
     <section className='sections'>
         <div className='md:my-10 max-sm:mb-5 rounded-[16px]  bg-donateHeader h-[250px] md:h-[470px] flex items-center justify-center bg-cover bg-center bg-no-repeat'>

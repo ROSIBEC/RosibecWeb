@@ -14,8 +14,8 @@ const Project = () => {
                             <img src={project.img} alt={project.title}  className='rouned-[20px]'/>
                             <h4 className='pt-4 heading4'>{project.title}</h4>
                             <p className='my-3'>{project.text}</p>
-                            <a href="/donate"><button className='button' type='button'>Donate</button></a>
-                            {/* <Link to='/donate'><button className='button' type='button'>Donate</button></Link> */}
+                            {/* <a href="/donate"><button className='button' type='button'>Donate</button></a> */}
+                            <Link to='/donate'><button className='button' type='button'>Donate</button></Link>
                         </div>
                     )
                 })

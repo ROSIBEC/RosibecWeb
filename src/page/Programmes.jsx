@@ -21,7 +21,7 @@ const Programmes = () => {
                             <p className='text-whites-200 mb-10'>We empower widows and underprivileged children by addressing thier needs through economic empowerment, healthcare assistance, and education support. Each inititative equips individuals 
                                 with the resources and tools needed to foster self sufficiency.
                             </p>
-                            <a href="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8 '><button type="button">Donate</button></a>
+                            <Link to="/donate" className='py-4 text-whites-100 rounded-[10px] bg-purples-200 px-8 '><button type="button">Donate</button></Link>
                        </div>
                     
                 </div>
@@ -99,7 +99,7 @@ const Programmes = () => {
                         <div className=' gap-2 mt-10 md:gap-10 mx-auto  flex max-sm:  '>
                             <a href='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></a>
                             <button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3 '>Partner</button>
-                            <a href='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></a>
+                            <Link to='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></Link>
                         </div>
                     </div>
                 </div>

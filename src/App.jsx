@@ -11,13 +11,14 @@ import Donate from "./page/Donate";
 import Volunteer from "./page/Volunteer";
 import About from "./page/About";
 import Gallery from "./page/Gallery";
-import ScrollToTop from "./components/Scroll";
+// import { ScrollRestoration } from "react-scroll-restoration";
+// import ScrollToTop from "./components/Scroll";
 
 export default function App() {
   return (
     <BrowserRouter>
+    {/* <ScrollRestoration/> */}
       <Routes>
-        {/* <ScrollToTop/> */}
         <Route path="/" element={<Layout/>}>
           
           <Route index element={<Home />} />
