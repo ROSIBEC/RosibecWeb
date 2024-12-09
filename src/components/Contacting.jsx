@@ -5,9 +5,9 @@ import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 
 //  const test = import.meta.env.VITE_API_URL
-// const service  = import.meta.env.VITE_APP_SERVICE_ID
-// const template = import.meta.env.VITE_APP_TEMPLATE_ID
-// const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
+const service  = import.meta.env.VITE_APP_SERVICE_ID
+const template = import.meta.env.VITE_APP_TEMPLATE_ID
+const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
 
 const Contact = () => {
     const {register, handleSubmit,reset, formState: {errors} } = useForm()
@@ -95,7 +95,7 @@ const Contact = () => {
                     <input type="checkbox" name="" id="" />
                     <p>Sign up for updates, promotion and more.</p>
                 </div> */}
-                <button type="submit" className='button' disabled={loading}>{loading? 'Submitting': 'Send message'}</button>
+                <button type="submit" className='button' disabled={loading}>{loading? 'Submitting...': 'Send message'}</button>
             </form>
 
             
