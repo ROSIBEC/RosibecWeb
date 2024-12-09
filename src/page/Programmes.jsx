@@ -101,7 +101,7 @@ const Programmes = () => {
                             Join us in empowering others and creating lasting change!
                         </p>
                         <div className=' gap-2 mt-10 md:gap-10 mx-auto  flex max-sm:  '>
-                            <a href='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></a>
+                            <Link to='/volunteer'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-2 '>Volunteer</button></Link>
                             <button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3 '>Partner</button>
                             <Link to='/donate' className='w-full'><button type="button" className='py-3 text-whites-100 rounded-[10px] bg-purples-200 px-3'>Donate</button></Link>
                         </div>

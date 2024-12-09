@@ -15,7 +15,7 @@ export const NavLink =[
 ]
 
 export const FooterLink =[
-    {name:'Volunteer', link:'volunteer'},
+    {name:'Volunteer', link:'/volunteer'},
     {name:'Donate', link:'/donate'},
     {name:'Partner', link:'#'},
     {name:'Contact', link:'/contact'},

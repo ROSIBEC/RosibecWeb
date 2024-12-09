@@ -24,9 +24,9 @@ const Volunteer = () => {
                     can uplift communities and build a brighter future. Start today and be part of the change.
                 </p>
                 <div className='flex z-10  w-full items-start justify-start md:mt-5 gap-2 lg:gap-5'>
-                    <a href='/volunteer'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Volunteer</button></a>
-                    <a to='#'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Partner</button></a>
-                    <a href='/donate'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Donate</button></a>
+                    <Link to='#'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Volunteer</button></Link>
+                    <Link to='#'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Partner</button></Link>
+                    <Link to='/donate'><button className='py-3 md:py-5 text-whites-100 rounded-[10px] bg-purples-200 px-4 md:px-8' type='button'>Donate</button></Link>
                 </div>
             </div>
            
@@ -89,7 +89,7 @@ const Volunteer = () => {
                         underpriviledged children. Your donations, time, or advocacy can make a lasting difference. 
                         Together, we can bring hope and change lives!
                     </p>
-                    <a href='/donate'><button className='button md:w-1/2 w-full' type='button'>Donate</button></a>
+                    <Link to='/donate'><button className='button md:w-1/2 w-full' type='button'>Donate</button></Link>
                 </div>
             </div>
         </div>

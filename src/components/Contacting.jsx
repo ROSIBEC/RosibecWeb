@@ -1,11 +1,48 @@
 import { ChevronDown, Facebook, Instagram, LucideInstagram, Twitter } from 'lucide-react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser';
+
+//  const test = import.meta.env.VITE_API_URL
+const service  = import.meta.env.VITE_APP_SERVICE_ID
+const template = import.meta.env.VITE_APP_TEMPLATE_ID
+const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
 
 const Contact = () => {
-    const {register, handleSubmit, formState: {errors} } = useForm()
+    const {register, handleSubmit,reset, formState: {errors} } = useForm()
+    const [loading, setLoading] =useState(false)
+    const [status, setStatus] = useState(null)
 
+    
+    
+
+    useEffect (()=>{
+        const onSubmit = (data) =>{
+            setLoading(true)
+            emailjs.send(service, template , data, publicKey)
+            
+            .then(()=>{
+                setStatus('success')
+                reset()
+            }).catch (()=>setStatus("error"))
+            setLoading(false)
+        }
+
+
+
+        if (status==='success'){
+            alert('Message sent')
+        } else if (status==='error'){
+            alert ('Failed to send message')
+        }
+        return onSubmit
+    },[status, onSubmit])
+
+    
+
+    
+    // console.log( service,template,publicKey)
     // useEffect(()=>{
     //     const onForm = (data)=>{
     //         console.log(data)
@@ -22,7 +59,7 @@ const Contact = () => {
                 <p>We'd love to hear from you. Please fill out this form.</p>
             </div>
 
-            <form onSubmit={handleSubmit()} action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-10 '>
+            <form onSubmit={handleSubmit(onSubmit)} action="" className='grid gap-y-3 md:w-[70%] mx-auto pt-10 '>
                 <div className='flex max-sm:flex-col gap-3 md:gap-8 w-full justify-between'>
                     <div className='grid gap-2 w-full'>
                         <label htmlFor="">First name</label>
@@ -38,7 +75,7 @@ const Contact = () => {
 
                 <div className='grid gap-2'>
                     <label htmlFor="">Email</label>
-                    <input {...register('email', {required:true})} type="text" placeholder='you@company.com' className='input'/>
+                    <input {...register('email', {required:true})} type="email" placeholder='you@company.com' className='input'/>
                     {errors.email && <span className='text-red-500'>Input email field</span>}
                 </div>
                 <div className='grid gap-2'>
@@ -48,14 +85,20 @@ const Contact = () => {
                 </div>
                 <div className='grid gap-2'>
                     <label htmlFor="">Message</label>
-                    <textarea {...register('message', {required:true})} name="" id="" className='input'></textarea>
+                    <input {...register('message', {required:true})} type="text" placeholder='Please type in your message' className='input'/>
+                    {errors.message && <span className='text-red-500'>Input email field</span>}
+                </div>
+                {/* <div className='grid gap-2'>
+                    <label htmlFor="">Message</label>
+                    <input type="text"  {...register('message',{required:true})} name="" id="" className='input'/>
+                    
                     {errors.message && <span className='text-red-500'>Input message field</span>}
                 </div>
                 <div className='flex gap-4'>
                     <input type="checkbox" name="" id="" />
                     <p>Sign up for updates, promotion and more.</p>
-                </div>
-                <button type="submit" className='button'>Send message</button>
+                </div> */}
+                <button type="submit" className='button' disabled={loading}>{loading? 'Submitting': 'Send message'}</button>
             </form>
 
             
