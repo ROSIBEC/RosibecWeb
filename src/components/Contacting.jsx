@@ -5,39 +5,36 @@ import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 
 //  const test = import.meta.env.VITE_API_URL
-const service  = import.meta.env.VITE_APP_SERVICE_ID
-const template = import.meta.env.VITE_APP_TEMPLATE_ID
-const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
+// const service  = import.meta.env.VITE_APP_SERVICE_ID
+// const template = import.meta.env.VITE_APP_TEMPLATE_ID
+// const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
 
 const Contact = () => {
     const {register, handleSubmit,reset, formState: {errors} } = useForm()
     const [loading, setLoading] =useState(false)
     const [status, setStatus] = useState(null)
 
-    
+    const onSubmit = async (data) =>{
+        setLoading(true)
+        emailjs.send(service, template , data, publicKey)
+        
+        .then(()=>{
+            setStatus('success')
+            reset()
+        }).catch (()=>setStatus("error"))
+        setLoading(false)
+    }
+
     
 
     useEffect (()=>{
-        const onSubmit = (data) =>{
-            setLoading(true)
-            emailjs.send(service, template , data, publicKey)
-            
-            .then(()=>{
-                setStatus('success')
-                reset()
-            }).catch (()=>setStatus("error"))
-            setLoading(false)
-        }
-
-
-
         if (status==='success'){
             alert('Message sent')
         } else if (status==='error'){
             alert ('Failed to send message')
         }
-        return onSubmit
-    },[status, onSubmit])
+        
+    },[status])
 
     
 
