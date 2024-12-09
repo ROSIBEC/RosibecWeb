@@ -16,22 +16,30 @@ const Contact = () => {
 
     const onSubmit = async (data) =>{
         setLoading(true)
-        emailjs.send(service, template , data, publicKey)
+
+        emailjs
+            .send(service, template , data, publicKey)
+            .then(()=>{
+                setStatus('success')
+                reset();
+                
+            })
+            .catch (()=>{
+                setStatus('error')
+            })
+            .finally(()=>{
+                setLoading(false)
+            })
         
-        .then(()=>{
-            setStatus('success')
-            reset()
-        }).catch (()=>setStatus("error"))
-        setLoading(false)
     }
 
     
 
     useEffect (()=>{
         if (status==='success'){
-            alert('Message sent')
+            alert('Email sent successfully')
         } else if (status==='error'){
-            alert ('Failed to send message')
+            alert ('Failed to send email.')
         }
         
     },[status])
@@ -95,7 +103,7 @@ const Contact = () => {
                     <input type="checkbox" name="" id="" />
                     <p>Sign up for updates, promotion and more.</p>
                 </div> */}
-                <button type="submit" className='button' disabled={loading}>{loading? 'Submitting...': 'Send message'}</button>
+                <button type="submit" disabled={loading} className='button'>{loading ? 'submitting...' : 'Send message'}</button>
             </form>
 
             
